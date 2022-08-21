@@ -1,0 +1,22 @@
+{
+  "name": "fitness-53",
+  "version": "1.0.0",
+  "description": "fit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan-kormilitsyn/Fitness_menu.git"
+  },
+  "author": "Ivan K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan-kormilitsyn/Fitness_menu/issues"
+  },
+  "homepage": "https://github.com/ivan-kormilitsyn/Fitness_menu#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
