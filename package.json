@@ -1,21 +1,21 @@
 {
-  "name": "fitness-53",
+  "name": "food_delivery",
   "version": "1.0.0",
-  "description": "fit",
+  "description": "Fitness_SPA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivan-kormilitsyn/Fitness_menu.git"
+    "url": "https://github.com/ivan-kormilitsyn/Healthy-food-delivery"
   },
   "author": "Ivan K.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivan-kormilitsyn/Fitness_menu/issues"
+    "url": "https://github.com/ivan-kormilitsyn/Healthy-food-delivery/issues"
   },
-  "homepage": "https://github.com/ivan-kormilitsyn/Fitness_menu#readme",
+  "homepage": "https://github.com/ivan-kormilitsyn/Healthy-food-delivery#readme",
   "devDependencies": {
     "json-server": "^0.17.0"
   }
