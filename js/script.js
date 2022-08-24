@@ -292,3 +292,7 @@ window.addEventListener('DOMContentLoaded', () => {
       .then(data => data.json())
 });
 
+// -------------- Slider --------------
+
+// const slide = document.querySelectorAll('offer__slide')
+

@@ -24,24 +24,9 @@
   ],
   "requests": [
     {
-      "name": "kek",
-      "phone": "112",
-      "id": 1
-    },
-    {
       "name": "1",
       "phone": "321",
       "id": 2
-    },
-    {
-      "name": "kek",
-      "phone": "333333",
-      "id": 3
-    },
-    {
-      "name": "lesson",
-      "phone": "60",
-      "id": 4
     }
   ]
 }
