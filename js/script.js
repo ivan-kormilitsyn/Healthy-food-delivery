@@ -240,7 +240,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
          const request = new XMLHttpRequest();
-         request.open('POST', '/js/server.php');
+         request.open('POST', 'js/server.php');
 
          const formData = new FormData(form);
 
@@ -290,9 +290,55 @@ window.addEventListener('DOMContentLoaded', () => {
 
    fetch('http://localhost:3000/menu')
       .then(data => data.json())
+
+
+   // -------------- Slider --------------
+
+   const slides = document.querySelectorAll('.offer__slide'),
+      prevSlide = document.querySelector('.offer__slider-prev'),
+      nextSlide = document.querySelector('.offer__slider-next'),
+      currentSlide = document.querySelector('#current'),
+      totalSlides = document.querySelector('#total');
+
+   let slideIndex = 1;
+
+   showSlides(slideIndex);
+
+   if (slides.length < 10) {
+      totalSlides.textContent = `0${slides.length}`;
+   } else {
+      totalSlides.textContent = slides.length;
+   }
+
+   function showSlides(n) {
+      if (n > slides.length) {
+         slideIndex = 1;
+      }
+      if (n < 1) {
+         slideIndex = slides.length;
+      }
+
+      slides.forEach(item => item.style.display = 'none');
+
+      slides[slideIndex - 1].style.display = 'block';
+
+      if (slides.length < 10) {
+         currentSlide.textContent = `0${slideIndex}`;
+      } else {
+         currentSlide.textContent = slideIndex;
+      }
+   }
+
+   function plusSlideIndex(n) {
+      showSlides(slideIndex += n);
+   }
+
+   prevSlide.addEventListener('click', () => {
+      plusSlideIndex(-1);
+   });
+
+   nextSlide.addEventListener('click', () => {
+      plusSlideIndex(1);
+   });
+
 });
-
-// -------------- Slider --------------
-
-// const slide = document.querySelectorAll('offer__slide')
-
